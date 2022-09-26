@@ -7,7 +7,7 @@
 var nameCourse:string = 'TypeScript';
 var price:number = 1000;
 
-var course = {
+let course = {
     nameCourse,
     price,
     getName() {
@@ -20,9 +20,10 @@ console.log(course.getName());
 var fieldName:string = 'name';
 var fieldPrice:string = 'price';
 
-var course1 = {
+let course1 = {
     [fieldName]: 'ReactJS',
     [fieldPrice]: 1000
 }
 
 console.log(course1);
+export {};
