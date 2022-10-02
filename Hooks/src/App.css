@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: lightpink;
+}
+
+.App {
+  text-align: center;
+  margin: 100px auto;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
