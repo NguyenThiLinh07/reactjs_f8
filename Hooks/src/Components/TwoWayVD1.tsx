@@ -1,30 +1,31 @@
 import React from "react";
 import { useState } from "react";
 
-const TwoWay = () => {
-  interface Courses {
-    id: number;
-    name: string;
-  }
+interface Courses {
+  id: number;
+  name: string;
+}
 
-  const courses: Courses[] = [
-    {
-      id: 1,
-      name: "HTML, CSS",
-    },
-    {
-      id: 2,
-      name: "Typescript",
-    },
-    {
-      id: 3,
-      name: "ReactJS",
-    },
-  ];
+const courses: Courses[] = [
+  {
+    id: 1,
+    name: "HTML, CSS",
+  },
+  {
+    id: 2,
+    name: "Typescript",
+  },
+  {
+    id: 3,
+    name: "ReactJS",
+  },
+];
 
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [checked, setChecked] = useState(0);
+const TwoWayVD1 = () => {
+
+  const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [checked, setChecked] = useState<number>(2);
   const handleSubmit = () => {
     console.log({
       name,
@@ -52,4 +53,4 @@ const TwoWay = () => {
   );
 };
 
-export default TwoWay;
+export default TwoWayVD1;

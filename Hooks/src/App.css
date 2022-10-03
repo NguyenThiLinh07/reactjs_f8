@@ -6,6 +6,7 @@
 
 body {
   background: lightpink;
+  scroll-behavior: smooth;
 }
 
 .App {
